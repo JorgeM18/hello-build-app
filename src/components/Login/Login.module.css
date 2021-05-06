@@ -1,0 +1,89 @@
+.Princont{
+    background: linear-gradient(to bottom, rgba(23, 44, 69,0.5), rgba(23, 44, 69,0.5) ), url("../../images/login.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    /* padding-top: 50px; */
+}
+.Princont .labelCont{
+    display: flex;
+    width: 80%;
+    cursor: pointer;
+    padding-left: 4%;
+    padding-top: 15px;
+}
+.Princont .labelCont h3,
+.labelIcon {
+  color: rgba(255,255,255,0.5);
+  margin: auto 0;
+  padding-right: 15px;
+  
+}
+.labelIcon {
+    position: relative;
+    border-radius: 50%;
+    z-index: 1;
+    margin-left: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+.ContPrin{
+    background-color: rgba(23, 44, 69,0.8);
+    color: white;
+    height: 850px;
+    width: 460px;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 15px;
+}
+.contFrom{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.ContLog{
+    width: 100%;
+    height: 50%;
+}  
+.ContLog .logo{
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+.ContLog .logo img{
+    width: 100%;
+}
+
+
+.input{
+    border-left: 10px solid #10D49A;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    background-color: transparent;
+    color: white;
+    height: 60px;
+    font-family: 'Raleway', sans-serif;
+}
+.button2{
+    background-color: #10D49A;
+    border: 1px solid #10D49A;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.button1{
+    background-color: transparent;
+    width: 50%;
+    height: 40px;
+    margin-top: 30PX;
+    border-left: none;
+    border-top: none;
+    border-bottom: 4px solid #10D49A;
+    border-right: none;
+    
+
+}
