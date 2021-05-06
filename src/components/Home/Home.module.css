@@ -1,0 +1,14 @@
+:root {
+  --green: #10D49A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mainCont {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
