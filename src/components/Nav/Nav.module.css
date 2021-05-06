@@ -1,0 +1,60 @@
+:root {
+  --green: #10D49A;
+  --dark-blue: #172C45;
+}
+
+.mainCont {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+  height: 100px;
+  background: linear-gradient(to bottom, var(--dark-blue), rgba(0,0,0,0));
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.logoCont {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logoCont img {
+  position: relative;
+  width: 50%;
+}
+
+.menuCont {
+  flex-grow: 1;
+}
+
+.menuCont ul{
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menuCont ul li{
+  list-style: none;
+  margin: 2.5%;
+}
+
+.menuCont ul li a{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.menuCont ul li a:hover{
+  color: var(--green);
+}

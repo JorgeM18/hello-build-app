@@ -1,0 +1,148 @@
+:root {
+  --green: #10D49A;
+  --dark-blue: #172C45;
+  --xs: 320px;
+  --sm: 768px;
+  --ms: 1280px; 
+}
+
+.mainCont {
+  width: 300%;
+  height: 100vh;
+  display: flex;
+}
+
+.first {
+  margin-left: 0%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('../../images/home.jpg');
+}
+.second {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('../../images/github.jpg');
+}
+.third {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('../../images/github.jpg');
+}
+
+.sliderCont {
+  position: relative;
+  width: 33.33%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: margin-left 0.75s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.sliderCont .jumboCont {
+  position: relative;
+  top: 30%;
+  width: 50%;
+  height: 80%;
+  min-width: 768px;
+}
+
+.sliderCont h1,
+.sliderCont h3,
+.sliderCont p
+  {
+    font-family: 'Raleway', sans-serif;
+  }
+
+.sliderCont h1 {
+  font-size: calc(2.5vw + 1.1rem);
+  font-weight: bold;
+  color: var(--green);
+}
+
+.sliderCont h3 {
+  font-size: calc(0.4vw + 1rem);
+  font-weight: bold;
+  color: white;
+}
+
+.sliderCont p {
+  font-size: calc(0.05vw + 1rem);
+  font-weight: bold;
+  color: white;
+}
+
+.sliderCont Button {
+  z-index: 1;
+  background-color: var(--dark-blue);
+  color: var(--green);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  box-shadow: inset 0 0 0px var(--green);
+  transition: box-shadow 0.5s;
+}
+
+.sliderCont Button:hover {
+  color: var(--dark-blue);
+  box-shadow: inset 0 0 100px var(--green);
+  transition: box-shadow 0.5s 
+}
+
+.sliderCont .labelCont {
+  cursor: pointer;
+  display: flex;
+  width: 80%;
+}
+
+.firstLabel {
+  justify-content: flex-end;
+}
+.secondLabel {
+  justify-content: space-between;
+}
+
+.sliderCont .labelCont h3,
+.labelIcon {
+  color: rgba(255,255,255,0.5);
+  margin: auto 0;
+  transition: all 0.5s;
+}
+
+.labelIcon {
+  position: relative;
+  border-radius: 50%;
+  z-index: 1;
+  margin-left: 5px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.labelCont:hover h3 {
+  color: white;
+  transition: all 0.5s;
+}
+.firstLabel:hover .labelIcon {
+  color: white;
+  transition: all 0.5s;
+  animation: pointArrow 0.75s infinite;
+}
+.secondLabel label:hover {
+  color: white;
+  transition: all 0.5s;
+  animation: pointArrow 0.75s infinite;
+}
+.thirdLabel label:hover {
+  color: white;
+  transition: all 0.5s;
+  animation: pointArrow 0.75s infinite;
+}
+
+
+@keyframes pointArrow {
+  0%   { left: 0px;  }
+  50%  { left: 10px; }
+  100% { left: 0px;  }
+}
